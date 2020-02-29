@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.FilterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/filter_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Filter" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/filter_margint_top_tiems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Surface:"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="between "
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/activity_filter_start_surface"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=" and " />
+
+            <EditText
+                android:id="@+id/activity_filter_end_surface"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filter_margint_top_tiems"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Number of rooms:"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="between " />
+
+            <EditText
+                android:id="@+id/activity_filter_start_number_of_rooms"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=" and " />
+
+            <EditText
+                android:id="@+id/activity_filter_end_number_of_rooms"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filter_margint_top_tiems"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Number of bedrooms:"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="between " />
+
+            <EditText
+                android:id="@+id/activity_filter_start_number_of_bedrooms"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text=" and " />
+
+            <EditText
+                android:id="@+id/activity_filter_end_number_of_bedrooms"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/filter_margint_top_tiems"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Status:"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/activity_filter_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:text="Sold" />
+
+            <CheckBox
+                android:id="@+id/activity_filter_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:text="Available" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/filter_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/poppins_bold"
+            android:minWidth="@dimen/btn_width"
+            android:text="@string/get_filtered_list" />
+    </LinearLayout>
+</LinearLayout>

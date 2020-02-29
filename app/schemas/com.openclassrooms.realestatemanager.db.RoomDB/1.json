@@ -1,0 +1,117 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "9a15b52b8d3863c17caba3669d53f71e",
+    "entities": [
+      {
+        "tableName": "realEstateListings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `type` TEXT NOT NULL, `numbOfBedRooms` INTEGER NOT NULL, `surfaceArea` INTEGER NOT NULL, `numberOfRooms` INTEGER NOT NULL, `description` TEXT NOT NULL, `longDescription` TEXT NOT NULL, `photos` TEXT NOT NULL, `address` TEXT NOT NULL, `pointsOfInterest` TEXT NOT NULL, `status` TEXT NOT NULL, `datePutInMarket` INTEGER NOT NULL, `saleData` INTEGER NOT NULL, `agent` TEXT NOT NULL, `price` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numbOfBedRooms",
+            "columnName": "numbOfBedRooms",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "surfaceArea",
+            "columnName": "surfaceArea",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numberOfRooms",
+            "columnName": "numberOfRooms",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "longDescription",
+            "columnName": "longDescription",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "photos",
+            "columnName": "photos",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pointsOfInterest",
+            "columnName": "pointsOfInterest",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "datePutInMarket",
+            "columnName": "datePutInMarket",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saleData",
+            "columnName": "saleData",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "agent",
+            "columnName": "agent",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"9a15b52b8d3863c17caba3669d53f71e\")"
+    ]
+  }
+}

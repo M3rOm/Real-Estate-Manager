@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9575CD</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#6200EA</color>
+
+    <color name="colorCustomGrey">#A5A59C</color>
+    <color name="colorCustomLightGrey">#D6D6D6</color>
+    <color name="colorCustomLight">#D1C4E9</color>
+    <color name="amber">#FFC107</color>
+    <color name="white">#FFF</color>
+    <color name="colorCustomBlue">#828CEB</color>
+    <color name="colorCustomMid">#B39DDB</color>
+    <color name="drawer_color">#DBDBDB</color>
+</resources>

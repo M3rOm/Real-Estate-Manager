@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/points_of_interest_background"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/points_of_interest_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/points_of_interest"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/points_of_interest_item_delete_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_remove_circle_red_24dp"
+        android:contentDescription="@string/remove_icon" />
+
+</LinearLayout>
